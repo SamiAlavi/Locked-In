@@ -21,4 +21,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Locked In"
 include(":app")
- 

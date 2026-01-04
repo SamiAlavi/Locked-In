@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="24dp">
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ready"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- User Input for Lock Time in Minutes -->
+    <EditText
+        android:id="@+id/durationInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_minutes"
+        android:text="@string/default_minutes"
+        android:inputType="number"
+        android:importantForAutofill="no"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_marginBottom="16dp"/>
+
+
+    <!-- Start Lock Button -->
+    <Button
+        android:id="@+id/lockButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_lock"/>
+
+</LinearLayout>
