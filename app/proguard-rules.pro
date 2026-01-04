@@ -19,3 +19,15 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class com.venom.lockedin.MainActivity { *; }
+-keep class com.venom.lockedin.LockService { *; }
+
+-keep class * extends android.app.Activity
+-keep class * extends android.app.Service
+
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** v(...);
+    public static *** i(...);
+}
